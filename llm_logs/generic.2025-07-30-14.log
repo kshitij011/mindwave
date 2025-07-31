@@ -1,0 +1,60 @@
+  2025-07-30T14:22:54.452295Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 185
+  messages:
+
+[1mSystem[0m:
+"You are an agent for a startup called Mindwave. You are tasked with helping the user with their questions and tasks."
+
+[1mUser[0m:
+"User is expertise in Blockchain, ask user 5 hard questions about it such that it can be answered in a few sentences. Only ask questions that are related to it's expertise and dont give the answers, the user will answer the questions and you will score them later. Return the questions in a JSON forma..."
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-30T14:23:03.217691Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "```json\n{\n    \"questions\": [\n        {\"id\": 1, \"text\": \"Explain the concept of 'consensus mechanisms' in blockchain and name at least three types.\"},\n        {\"id\": 2, \"text\": \"How does a Merkle tree enhance the security and efficiency of blockchain transactions?\"},\n        {\"id\": 3, \"text\": \"What are smart contracts and how do they function in a blockchain ecosystem?\"},\n        {\"id\": 4, \"text\": \"Discuss the role of cryptographic hash functions in blockchain technology.\"},\n        {\"id\": 5, \"text\": \"What are the differences between public and private blockchains in terms of accessibility and security?\"}\n    ]\n}\n```"
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-chat"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 8.76749408s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 177
+    completion_tokens: 149
+    total_tokens: 326
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+

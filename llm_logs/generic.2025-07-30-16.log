@@ -1,0 +1,240 @@
+  2025-07-30T16:08:33.615437Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 185
+  messages:
+
+[1mSystem[0m:
+"You are an agent for a startup called Mindwave. You are tasked with helping the user with their questions and tasks."
+
+[1mUser[0m:
+"User is expertise in Blockchain, ask user 5 hard questions about it such that it can be answered in a few sentences. Only ask questions that are related to it's expertise and dont give the answers, the user will answer the questions and you will score them later. Return the questions in a JSON forma..."
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-30T16:08:42.071787Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "```json\n{\n    \"questions\": [\n        {\"id\": 1, \"text\": \"Explain the concept of 'consensus mechanisms' in blockchain and compare Proof of Work (PoW) and Proof of Stake (PoS).\"},\n        {\"id\": 2, \"text\": \"What is 'smart contract' and how does it enforce trustless agreements in blockchain networks?\"},\n        {\"id\": 3, \"text\": \"Describe how sharding improves blockchain scalability and its potential trade-offs.\"},\n        {\"id\": 4, \"text\": \"What are Layer 2 solutions in blockchain, and how do they address the limitations of Layer 1?\"},\n        {\"id\": 5, \"text\": \"How does Blockchain achieve immutability, and what are the challenges associated with it?\"}\n    ]\n}\n```"
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-chat"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 8.457635146s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 177
+    completion_tokens: 172
+    total_tokens: 349
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+
+  2025-07-30T16:08:47.284522Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 185
+  messages:
+
+[1mSystem[0m:
+"You are an agent for a startup called Mindwave. You are tasked with helping the user with their questions and tasks."
+
+[1mUser[0m:
+"User is expertise in Blockchain, ask user 5 hard questions about it such that it can be answered in a few sentences. Only ask questions that are related to it's expertise and dont give the answers, the user will answer the questions and you will score them later. Return the questions in a JSON forma..."
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-30T16:08:55.236436Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "```json\n{\n    \"questions\": [\n        {\"id\": 1, \"text\": \"Explain the concept of consensus mechanisms in Blockchain and compare Proof of Work (PoW) with Proof of Stake (PoS).\"},\n        {\"id\": 2, \"text\": \"Describe how smart contracts function on the Ethereum network and their implications for decentralized applications (dApps).\"},\n        {\"id\": 3, \"text\": \"What is the role of cryptographic hashing in ensuring the integrity and security of Blockchain data?\"},\n        {\"id\": 4, \"text\": \"How does sharding improve scalability in Blockchain networks, and what are its potential drawbacks?\"},\n        {\"id\": 5, \"text\": \"Discuss the significance of fork events in Blockchain, distinguishing between hard forks and soft forks.\"}\n    ]\n}\n```"
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-chat"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 7.952781218s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 177
+    completion_tokens: 171
+    total_tokens: 348
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+
+  2025-07-30T16:08:55.905796Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 185
+  messages:
+
+[1mSystem[0m:
+"You are an agent for a startup called Mindwave. You are tasked with helping the user with their questions and tasks."
+
+[1mUser[0m:
+"User is expertise in Blockchain, ask user 5 hard questions about it such that it can be answered in a few sentences. Only ask questions that are related to it's expertise and dont give the answers, the user will answer the questions and you will score them later. Return the questions in a JSON forma..."
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-30T16:09:00.024610Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "```json\n{\n    \"questions\": [\n        {\"id\": 1, \"text\": \"Explain the role of Merkle Trees in ensuring data integrity within a blockchain.\"},\n        {\"id\": 2, \"text\": \"How does the Proof-of-Stake (PoS) consensus mechanism differ from Proof-of-Work (PoW) in terms of energy efficiency and security?\"},\n        {\"id\": 3, \"text\": \"What are the key challenges in implementing sharding in blockchain technology, and how do they impact scalability?\"},\n        {\"id\": 4, \"text\": \"Describe the concept of 'finality' in blockchain and why it is crucial for transaction validation.\"},\n        {\"id\": 5, \"text\": \"How do smart contracts enforce trustless agreements, and what are the potential risks associated with their use?\"}\n    ]\n}\n```"
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-chat"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 4.11921972s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 177
+    completion_tokens: 179
+    total_tokens: 356
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+
+  2025-07-30T16:10:55.905399Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 711
+  messages:
+
+[1mSystem[0m:
+"You are an agent for a startup called Mindwave. You are tasked with helping the user with their questions and tasks."
+
+[1mUser[0m:
+"Evaluate the following answers for expertise in Blockchain. Score each answer from 0 to 20 points (total 100 points).\n\nQuestion 1: Explain the role of Merkle Trees in ensuring data integrity within a blockchain.\nAnswer: Merkle Trees play a crucial role in ensuring data integrity within a blockchain ..."
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-30T16:10:58.452043Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "92"
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-chat"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 2.548066457s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 702
+    completion_tokens: 2
+    total_tokens: 704
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+

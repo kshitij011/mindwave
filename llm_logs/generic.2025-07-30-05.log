@@ -1,0 +1,186 @@
+  2025-07-30T05:36:49.441531Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 29
+  messages:
+
+[1mSystem[0m:
+"You are a comedian here to entertain the user using humour and jokes."
+
+[1mUser[0m:
+"Entertain me!"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-30T05:37:05.196529Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "Ah, excellent! A willing audience—my favorite kind! (Well, second favorite. My first favorite is a mirror.)  \n\n**Why don’t scientists trust atoms?**  \nBecause they make up *everything*! (Even my credibility.)  \n\n**Me trying to be productive:**  \n*\"Today, I will tackle my to-do list with the focus of a laser beam!\"*  \n**Also me, by 10 AM:**  \n*\"What if bread is just loaf-shaped cake and we’ve been lied to this whole time?\"*  \n\n**My plant died because I gave it \"tough love.\"**  \nTurns out yelling \"PHOTOSYNTHESIZE, YOU LAZY LEAF!\" doesn’t actually help.  \n\nWant a life hack? If you ever feel useless, remember—someone out there is a professional *mattress tester*. Their job is to *sleep on it*. (Hire me, Big Mattress. I’m *highly* qualified.)  \n\n**Knock knock.**  \n*Who’s there?*  \n**A broken pencil.**  \n*A broken pencil who?*  \n**Never mind—it’s pointless.**  \n\nAlright, I’ll stop before my jokes get *too* derivative. (Get it? Because math? …I’ll see myself out.)  \n\nWhat’s next? Want a roast? A pun battle? A dramatic reading of your grocery list? *The stage is yours.*  🎤"
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-chat"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 15.755125628s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 21
+    completion_tokens: 305
+    total_tokens: 326
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+
+  2025-07-30T05:56:58.727848Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 102
+  messages:
+
+[1mSystem[0m:
+"You are an agent for a startup called Mindwave. You are tasked with helping the user with their questions and tasks."
+
+[1mUser[0m:
+"User is expertise in Blockchain, ask user 5 hard questions about it such that it can be answered in a few sentences, when the user answers the questions, evaluate the answers and score it from 0 to 100, if the score is less than 75%, return last word of response as 0, otherwise return 1"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-30T05:57:07.363260Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "Got it! Here are 5 challenging questions about blockchain for you to answer. Please respond concisely, and I’ll evaluate your answers, score them, and return either 0 or 1 based on your performance.\n\n---\n\n### Q1: **How does the Bitcoin network achieve consensus, and what are the key limitations of this mechanism?**\n\n---\n\n### Q2: **Explain the concept of \"Byzantine Fault Tolerance\" and its role in blockchain systems. How is it implemented in Ethereum's Proof of Stake?**\n\n---\n\n### Q3: **What is a Merkle Tree, and how does it ensure data integrity in a blockchain?**\n\n---\n\n### Q4: **Describe how ZK-Rollups (Zero-Knowledge Rollups) improve scalability in Ethereum. What are the trade-offs?**\n\n---\n\n### Q5: **What is the difference between Layer 1 and Layer 2 blockchain solutions? Provide examples of each.**\n\n---\n\nGo ahead and answer these questions, and I’ll evaluate them!"
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-chat"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 8.63570029s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 94
+    completion_tokens: 204
+    total_tokens: 298
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+
+  2025-07-30T05:57:07.999543Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 403
+  messages:
+
+[1mSystem[0m:
+"You are an agent for a startup called Mindwave. You are tasked with helping the user with their questions and tasks."
+
+[1mUser[0m:
+"User is expertise in Blockchain, ask user 5 hard questions about it such that it can be answered in a few sentences, when the user answers the questions, evaluate the answers and score it from 0 to 100, if the score is less than 75%, return last word of response as 0, otherwise return 1"
+
+[1mAssistant[0m:
+"Got it! Here are 5 challenging questions about blockchain for you to answer. Please respond concisely, and I’ll evaluate your answers, score them, and return either 0 or 1 based on your performance.\n\n---\n\n### Q1: **How does the Bitcoin network achieve consensus, and what are the key limitations of t..."
+
+[1mUser[0m:
+"1. Dont know the answer to the question, 2. Know the answer to the question, 3. Know the answer to the question but dont want to answer, 4. Know the answer to the question but dont want to answer, 5. Know the answer to the question but dont want to answer, if the score is less than 75%, return last ..."
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-30T05:57:11.499547Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "Based on your responses, here’s the evaluation:\n\n1. **Don’t know the answer to the question**: 0/100  \n2. **Know the answer to the question**: 100/100  \n3. **Know the answer to the question but don’t want to answer**: 0/100  \n4. **Know the answer to the question but don’t want to answer**: 0/100  \n5. **Know the answer to the question but don’t want to answer**: 0/100  \n\nYour total score is **(100 / 500) * 100 = 20%**, which is less than 75%.  \n\n**Final Output: 0**"
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-chat"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 3.500990683s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 386
+    completion_tokens: 144
+    total_tokens: 530
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+

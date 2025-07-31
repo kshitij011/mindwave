@@ -1,0 +1,252 @@
+  2025-07-30T06:03:06.685397Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 102
+  messages:
+
+[1mSystem[0m:
+"You are an agent for a startup called Mindwave. You are tasked with helping the user with their questions and tasks."
+
+[1mUser[0m:
+"User is expertise in Blockchain, ask user 5 hard questions about it such that it can be answered in a few sentences, when the user answers the questions, evaluate the answers and score it from 0 to 100, if the score is less than 75%, return last word of response as 0, otherwise return 1"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-30T06:03:17.878920Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "Understood! Here are five challenging blockchain-related questions for the user:  \n\n1. **How does the Ethereum Virtual Machine (EVM) enable Turing-completeness in smart contracts, and what are the implications for gas costs?**  \n2. **Explain the trade-offs between Proof of Work (PoW) and Proof of Stake (PoS) in terms of security, decentralization, and scalability.**  \n3. **What is the role of Merkle Trees in blockchain integrity, and how do they optimize data verification?**  \n4. **How does sharding improve blockchain scalability, and what are the key challenges in implementing it securely?**  \n5. **Describe how zero-knowledge proofs (ZKPs) enhance privacy in blockchain transactions while maintaining verifiability.**  \n\nAfter the user answers, I will evaluate each response on accuracy, depth, and clarity, scoring them from 0 to 100. If the score is below 75, the last word of my reply will be **0**. If 75 or above, it will be **1**.  \n\nLet’s begin! Please answer any of the above questions."
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-chat"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 11.193799265s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 94
+    completion_tokens: 229
+    total_tokens: 323
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+
+  2025-07-30T06:03:18.497511Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 431
+  messages:
+
+[1mSystem[0m:
+"You are an agent for a startup called Mindwave. You are tasked with helping the user with their questions and tasks."
+
+[1mUser[0m:
+"User is expertise in Blockchain, ask user 5 hard questions about it such that it can be answered in a few sentences, when the user answers the questions, evaluate the answers and score it from 0 to 100, if the score is less than 75%, return last word of response as 0, otherwise return 1"
+
+[1mAssistant[0m:
+"Understood! Here are five challenging blockchain-related questions for the user:  \n\n1. **How does the Ethereum Virtual Machine (EVM) enable Turing-completeness in smart contracts, and what are the implications for gas costs?**  \n2. **Explain the trade-offs between Proof of Work (PoW) and Proof of St..."
+
+[1mUser[0m:
+"1. Dont know the answer to the question, 2. Know the answer to the question, 3. Know the answer to the question but dont want to answer, 4. Know the answer to the question but dont want to answer, 5. Know the answer to the question but dont want to answer, if the score is less than 75%, return last ..."
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-30T06:03:21.533931Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "Based on your responses, it seems you only answered **Question 1** while choosing not to answer the others. Since **Question 1** was marked as \"Don't know the answer,\" I’ll score it accordingly.  \n\n**Question 1 Evaluation:**  \nScore: **0** (No answer provided or attempted.)  \n\nSince the score is below 75%, the last word of this response is **0**.  \n\nFinal response: **0**"
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-chat"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 3.037212071s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 412
+    completion_tokens: 93
+    total_tokens: 505
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+
+  2025-07-30T06:04:39.463122Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 102
+  messages:
+
+[1mSystem[0m:
+"You are an agent for a startup called Mindwave. You are tasked with helping the user with their questions and tasks."
+
+[1mUser[0m:
+"User is expertise in Blockchain, ask user 5 hard questions about it such that it can be answered in a few sentences, when the user answers the questions, evaluate the answers and score it from 0 to 100, if the score is less than 75%, return last word of response as 0, otherwise return 1"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-30T06:04:48.495750Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "Here are five challenging questions about blockchain. Answer them concisely, and I’ll evaluate your responses and score them out of 100. If the score is less than 75, the last word of my response will be **0**. If it’s 75 or above, it will be **1**.\n\n---\n\n### **Questions:**\n\n1. **How does the UTXO (Unspent Transaction Output) model in Bitcoin differ from the account-based model used in Ethereum?**  \n2. **Explain the role of zk-SNARKs in enhancing blockchain privacy and scalability.**  \n3. **What is the \"longest chain rule\" in blockchain consensus, and why is it critical for security?**  \n4. **How does sharding improve blockchain scalability, and what are its potential trade-offs?**  \n5. **What is the purpose of gas fees in Ethereum, and how do they prevent spam attacks?**\n\n---\n\nAnswer them one by one or all at once, and I’ll evaluate your responses!"
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-chat"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 9.032887059s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 94
+    completion_tokens: 208
+    total_tokens: 302
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+
+  2025-07-30T06:04:49.152910Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 426
+  messages:
+
+[1mSystem[0m:
+"You are an agent for a startup called Mindwave. You are tasked with helping the user with their questions and tasks."
+
+[1mUser[0m:
+"User is expertise in Blockchain, ask user 5 hard questions about it such that it can be answered in a few sentences, when the user answers the questions, evaluate the answers and score it from 0 to 100, if the score is less than 75%, return last word of response as 0, otherwise return 1"
+
+[1mAssistant[0m:
+"Here are five challenging questions about blockchain. Answer them concisely, and I’ll evaluate your responses and score them out of 100. If the score is less than 75, the last word of my response will be **0**. If it’s 75 or above, it will be **1**.\n\n---\n\n### **Questions:**\n\n1. **How does the UTXO (..."
+
+[1mUser[0m:
+"1. Dont know the answer to the question, 2. Know the answer to the question, 3. Know the answer to the question but dont want to answer, 4. Know the answer to the question but dont want to answer, 5. Know the answer to the question but dont want to answer, if the score is less than 75%, return last ..."
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-30T06:04:50.883446Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "0"
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-chat"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 1.73130263s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 411
+    completion_tokens: 2
+    total_tokens: 413
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+

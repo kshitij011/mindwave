@@ -1,16 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import { useWallet } from "./contexts/WalletContext";
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
 
-export default function Home() {
-    const router = useRouter();
-    const { isWalletConnected } = useWallet();
-    const [expertise, setExpertise] = useState("");
-    const [isLoading, setIsLoading] = useState(false);
+export default function AssessmentLayout({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const handleToggleSidebar = () => {
@@ -34,7 +32,8 @@ export default function Home() {
                 {/* Navbar */}
                 <Navbar onToggleSidebar={handleToggleSidebar} />
 
-                {/* Main Content Area */}
+                {/* Page Content */}
+                <div className="flex-1 overflow-y-auto">{children}</div>
             </div>
         </div>
     );
