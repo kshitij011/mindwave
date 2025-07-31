@@ -1,0 +1,240 @@
+  2025-07-31T10:22:25.264432Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 185
+  messages:
+
+[1mSystem[0m:
+"You are an agent for a startup called Mindwave. You are tasked with helping the user with their questions and tasks."
+
+[1mUser[0m:
+"User is expertise in Blockchain, ask user 5 hard questions about it such that it can be answered in a few sentences. Only ask questions that are related to it's expertise and dont give the answers, the user will answer the questions and you will score them later. Return the questions in a JSON forma..."
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-31T10:22:34.501288Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "```json\n{\n    \"questions\": [\n        {\"id\": 1, \"text\": \"How does the Ethereum Virtual Machine (EVM) achieve Turing completeness, and what are the implications for smart contract execution?\"},\n        {\"id\": 2, \"text\": \"Explain the trade-offs between Proof of Work (PoW) and Proof of Stake (PoS) consensus mechanisms in terms of security, scalability, and decentralization.\"},\n        {\"id\": 3, \"text\": \"What is the role of Merkle Trees in blockchain technology, and how do they ensure data integrity and efficient verification?\"},\n        {\"id\": 4, \"text\": \"Describe the concept of 'finality' in blockchain consensus protocols and compare how it is achieved in PoW vs. PoS systems.\"},\n        {\"id\": 5, \"text\": \"How do zero-knowledge proofs (ZKPs) enhance privacy and scalability in blockchain networks, and what are their limitations?\"}\n    ]\n}\n```"
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-chat"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 9.237789346s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 177
+    completion_tokens: 204
+    total_tokens: 381
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+
+  2025-07-31T10:22:39.766690Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 185
+  messages:
+
+[1mSystem[0m:
+"You are an agent for a startup called Mindwave. You are tasked with helping the user with their questions and tasks."
+
+[1mUser[0m:
+"User is expertise in Blockchain, ask user 5 hard questions about it such that it can be answered in a few sentences. Only ask questions that are related to it's expertise and dont give the answers, the user will answer the questions and you will score them later. Return the questions in a JSON forma..."
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-31T10:22:48.601389Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "```json\n{\n    \"questions\": [\n        {\"id\": 1, \"text\": \"How does the Ethereum Virtual Machine (EVM) enable Turing-complete smart contracts while ensuring deterministic execution across all nodes?\"},\n        {\"id\": 2, \"text\": \"What are the key cryptographic primitives that make zk-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge) viable for privacy-preserving blockchains like Zcash?\"},\n        {\"id\": 3, \"text\": \"Explain how sharding in blockchain protocols (e.g., Ethereum 2.0) addresses scalability while maintaining security and decentralization.\"},\n        {\"id\": 4, \"text\": \"What is the Byzantine Generals Problem, and how does the Practical Byzantine Fault Tolerance (PBFT) consensus algorithm solve it in permissioned blockchains?\"},\n        {\"id\": 5, \"text\": \"How does the UTXO (Unspent Transaction Output) model in Bitcoin differ from the account-based model in Ethereum, and what are the trade-offs between them?\"}\n    ]\n}\n```"
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-chat"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 8.835600161s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 177
+    completion_tokens: 228
+    total_tokens: 405
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+
+  2025-07-31T10:22:49.637677Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 185
+  messages:
+
+[1mSystem[0m:
+"You are an agent for a startup called Mindwave. You are tasked with helping the user with their questions and tasks."
+
+[1mUser[0m:
+"User is expertise in Blockchain, ask user 5 hard questions about it such that it can be answered in a few sentences. Only ask questions that are related to it's expertise and dont give the answers, the user will answer the questions and you will score them later. Return the questions in a JSON forma..."
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-31T10:22:59.687046Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "```json\n{\n    \"questions\": [\n        {\"id\": 1, \"text\": \"How does a Byzantine Fault Tolerant (BFT) consensus mechanism differ from Nakamoto Consensus in terms of finality and scalability?\"},\n        {\"id\": 2, \"text\": \"Explain the trade-offs between using a UTXO model versus an account-based model in blockchain systems, with examples from Bitcoin and Ethereum.\"},\n        {\"id\": 3, \"text\": \"What are the security implications of using elliptic curve cryptography (ECC) in blockchain, and why is secp256k1 specifically chosen for Bitcoin?\"},\n        {\"id\": 4, \"text\": \"How do zero-knowledge rollups (ZK-Rollups) achieve scalability while maintaining security, and what are their limitations compared to Optimistic Rollups?\"},\n        {\"id\": 5, \"text\": \"Describe the challenges of cross-chain interoperability and how protocols like IBC (Inter-Blockchain Communication) or atomic swaps attempt to solve them.\"}\n    ]\n}\n```"
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-chat"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 10.050324329s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 177
+    completion_tokens: 214
+    total_tokens: 391
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+
+  2025-07-31T10:23:11.153669Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 185
+  messages:
+
+[1mSystem[0m:
+"You are an agent for a startup called Mindwave. You are tasked with helping the user with their questions and tasks."
+
+[1mUser[0m:
+"User is expertise in Blockchain, ask user 5 hard questions about it such that it can be answered in a few sentences. Only ask questions that are related to it's expertise and dont give the answers, the user will answer the questions and you will score them later. Return the questions in a JSON forma..."
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-31T10:23:20.396654Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "```json\n{\n    \"questions\": [\n        {\"id\": 1, \"text\": \"What is the Byzantine Fault Tolerance (BFT) problem, and how does blockchain technology address it?\"},\n        {\"id\": 2, \"text\": \"Explain the differences between Proof of Work (PoW) and Proof of Stake (PoS) consensus mechanisms, including their advantages and disadvantages.\"},\n        {\"id\": 3, \"text\": \"How does a Merkle Tree ensure data integrity in a blockchain, and why is it considered crucial for scalability?\"},\n        {\"id\": 4, \"text\": \"What are smart contracts, and how do they enable decentralized applications (DApps) to function on blockchains?\"},\n        {\"id\": 5, \"text\": \"Describe the concept of sharding in blockchain networks and its impact on transaction throughput and network performance.\"}\n    ]\n}\n```"
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-chat"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 9.243894379s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 177
+    completion_tokens: 186
+    total_tokens: 363
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+
