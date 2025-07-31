@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useWallet } from "../contexts/WalletContext";
 import { CONTRACT_CONFIG } from "../../config/contract";
@@ -17,7 +17,7 @@ interface AssessmentData {
     expertise: string;
 }
 
-export default function AssessmentPage() {
+function AssessmentPage() {
     const router = useRouter();
     const searchParams = useSearchParams();
     const { isWalletConnected } = useWallet();
@@ -334,5 +334,13 @@ export default function AssessmentPage() {
                 </div>
             </div>
         </div>
+    );
+}
+
+export default function AssessmentPageWrapper() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <AssessmentPage />
+        </Suspense>
     );
 }
