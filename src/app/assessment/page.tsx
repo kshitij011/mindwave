@@ -1,11 +1,10 @@
-// @ts-nocheck
-
 "use client";
 
 import React, { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useWallet } from "../contexts/WalletContext";
 import { CONTRACT_CONFIG } from "../../config/contract";
+import type { Eip1193Provider } from "ethers";
 
 interface Question {
     id: number;
@@ -136,7 +135,7 @@ export default function AssessmentPage() {
 
             // Connect to the provider
             const provider = new ethers.BrowserProvider(
-                window.ethereum as unknown
+                window.ethereum as Eip1193Provider
             );
 
             // Get the signer
