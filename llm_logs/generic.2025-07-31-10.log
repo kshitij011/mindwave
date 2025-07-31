@@ -238,3 +238,37 @@ CompletionResponse:
     token_calls: None
     at crates/interface/src/requests/completion/request.rs:111
 
+  2025-07-31T10:39:20.990841Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 25
+  messages:
+
+[1mSystem[0m:
+"You are a test agent."
+
+[1mUser[0m:
+"Say 'Hello, API is working!'"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-31T10:39:22.163158Z ERROR alith_interface::llms::api::error: failed deserialization of: {"error":{"message":"No auth credentials found","code":401}}
+    at crates/interface/src/llms/api/error.rs:36
+
+  2025-07-31T10:39:22.163239Z  WARN alith_interface::requests::completion::request: e: ClientError(JSONDeserialize(Error("invalid type: integer `401`, expected a string", line: 1, column: 58)))
+    at crates/interface/src/requests/completion/request.rs:96
+
